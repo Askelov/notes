@@ -11,9 +11,9 @@ The Apache Kafka site defines it as a distributed streaming kafka.apache.org/int
 ### flow : produces - kafka - consumer
  
 ### Kafka message delivery can take at least the following three delivery methods:
-At least once semantics 
-At most once semantics 
-Exactly once semantics
+- At least once semantics 
+- At most once semantics 
+- Exactly once semantics
 Kafka’s default guarantee is at least once semantics. This means that Kafka can be configured to allow for a producer of messages to send the same message more than once and have it written to the brokers. When a message has not received a guarantee that it was written to the broker, the producer can send the message again in order to try again. For those cases where you can’t miss a message, say that someone has paid an invoice, this guarantee might take some filtering on the consumer end, but is one of the safest methods for delivery.
 
 ### Big difference between kafka and other messages brokes
