@@ -8,9 +8,9 @@ The Apache Kafka site defines it as a distributed streaming kafka.apache.org/int
  store records with fault-tolerance,
  and process streams as they occur.
  
- flow : produces - kafka - consumer
+#### flow : produces - kafka - consumer
  
- Kafka message delivery can take at least the following three delivery methods:
+##### Kafka message delivery can take at least the following three delivery methods:
 At least once semantics 
 At most once semantics 
 Exactly once semantics
