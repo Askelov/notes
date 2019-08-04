@@ -2,7 +2,7 @@
 
 my notes:
 
-##vWhat is Kafka?
+## What is Kafka?
 The Apache Kafka site defines it as a distributed streaming kafka.apache.org/intro platform that has three main capabilites:
  Provide the ability to publish/subscribe to records like a message queue, 
  store records with fault-tolerance,
