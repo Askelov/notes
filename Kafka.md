@@ -25,12 +25,17 @@ Kafka’s default guarantee is at least once semantics. This means that Kafka ca
 - If your main access pattern for data is mostly random lookup of data, Kafka might not be your best option.
  
 ### Parts of Kafka
-Component		 Role
-Producer		 Sends message to Kafka
-Consumer 		 Retrieves messages from Kafka
-Topics 		     Logical name of where message are stored in the broker
-ZooKeeper ensemble 		Helps maintain consensus in the cluster
-Broker 			Handles the commit log
+
+#### Producer		 
+- Sends message to Kafka
+#### Consumer 		
+- Retrieves messages from Kafka
+#### Topics 		     
+- Logical name of where message are stored in the broker
+#### ZooKeeper ensemble 		
+- Helps maintain consensus in the cluster
+#### Broker 		
+- Handles the commit log
 
 Topics are where most users will start to think about the logic of what messages should go where. Topics are actually made out of units called partitions. In other words, one or many partitions can make up a single topic 
 
