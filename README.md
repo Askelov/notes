@@ -8,20 +8,19 @@ The Apache Kafka site defines it as a distributed streaming kafka.apache.org/int
  store records with fault-tolerance,
  and process streams as they occur.
  
-#### flow : produces - kafka - consumer
+### flow : produces - kafka - consumer
  
-##### Kafka message delivery can take at least the following three delivery methods:
+### Kafka message delivery can take at least the following three delivery methods:
 At least once semantics 
 At most once semantics 
 Exactly once semantics
-
 Kafka’s default guarantee is at least once semantics. This means that Kafka can be configured to allow for a producer of messages to send the same message more than once and have it written to the brokers. When a message has not received a guarantee that it was written to the broker, the producer can send the message again in order to try again. For those cases where you can’t miss a message, say that someone has paid an invoice, this guarantee might take some filtering on the consumer end, but is one of the safest methods for delivery.
 
-Big difference between kafka and other messages brokes
+### Big difference between kafka and other messages brokes
 Kafka was designed to have multiple consumers. 
- Kafka allows for parallel processing of data and can have multiple consumers on the same exact topic
+Kafka allows for parallel processing of data and can have multiple consumers on the same exact topic
 
- When Kafka might not be the right fit?
+### When Kafka might not be the right fit?
  What if you only need a once monthly or even once yearly summary of aggregate data? If you don’t need an on-demand view, quick answer, or even the ability to reprocess data, then you might not need Kafka running throughout the entire year for that task alone. 
  If your main access pattern for data is mostly random lookup of data, Kafka might not be your best option.
  
